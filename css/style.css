@@ -226,9 +226,33 @@ img {
     background-repeat: no-repeat;
 }
 
+@media screen and (max-width: 992px) {
+    .hero-title {
+        font-size: 61px;
+    }
+    .hero-text {
+        font-size: 18px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .hero__container {
         flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .hero-title {
+        font-size: 42px;
+    }
+    .hero-text {
+        font-size: 16px;
+    }
+
+    .hero-button {
+        padding-left: 1.8em;
+        font-size: 16px;
+        background-position: bottom 50% right 15px;
     }
 }
 
@@ -287,6 +311,22 @@ img {
     border-left: 20px solid #fff;
 }
 
+@media screen and (max-width: 576px) {
+    .why-us__title {
+        font-size: 36px;
+    }
+
+    .why-us__text {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .why-us__info {
+        flex-direction: column;
+    }
+}
+
 /* Services */
 
 .services {
@@ -323,14 +363,29 @@ img {
     text-align: center;
 }
 
+.services-list__item:nth-child(n + 4) {
+    margin-top: 126px;
+}
+
 .services-list__icon {
     width: 69px;
     height: 69px;
     border-radius: 50%;
-    background-color: rgba(84, 84, 212, 0.1);
     background-repeat: no-repeat;
     background-position: center;
     background-image: url("../assets/icons/code.svg");
+}
+
+.services-list__icon_blue {
+    background-color: rgba(84, 84, 212, 0.1);
+}
+
+.services-list__icon_red {
+    background-color: rgba(240, 64, 55, 0.1);
+}
+
+.services-list__icon_yellow {
+    background-color: rgba(254, 220, 90, 0.1);
 }
 
 .services-list__title {
