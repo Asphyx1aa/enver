@@ -164,7 +164,7 @@ img {
         height: 100vh;
         width: 90%;
         top: 0;
-        right: 0;
+        right: 100%;
         background-color: orange;
         color: black;
     }
@@ -175,6 +175,7 @@ img {
         justify-content: center;
     }
 }
+
 
 
 /* Hero Section */
@@ -242,6 +243,10 @@ img {
 }
 
 @media screen and (max-width: 576px){
+    .hero {
+        padding-top: 0;
+    }
+
     .hero-title {
         font-size: 42px;
     }
@@ -325,6 +330,15 @@ img {
     .why-us__info {
         flex-direction: column;
     }
+
+    .why-us__title {
+        flex: 0;
+        margin-bottom: 30px;
+    }
+
+    .why-us__text {
+        padding-left: 0;
+    }
 }
 
 /* Services */
@@ -358,6 +372,7 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 20px;
     align-items: center;
     max-width: 300px;
     text-align: center;
@@ -368,12 +383,17 @@ img {
 }
 
 .services-list__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 69px;
     height: 69px;
     border-radius: 50%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url("../assets/icons/code.svg");
+}
+
+.services-list__icon svg {
+    width: 32px;
+    height: 32px;
 }
 
 .services-list__icon_blue {
@@ -398,4 +418,68 @@ img {
     text-align: center;
     color: rgba(255, 255, 255, 0.7);
     letter-spacing: -0.025em;
+}
+
+/* Portfolio */
+
+.portfolio {
+    padding-top: 101px;
+}
+
+.portfolio-works {
+    display: none;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+.portfolio-works_active {
+    display: flex;
+}
+
+.portfolio-slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portfolio-slider__buttons {
+    margin-top: 50px;
+    display: flex;
+    gap: 8px;
+}
+
+.portfolio-slider__button {
+    width: 8px;
+    height: 8px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background-color: #121213;
+    cursor: pointer;
+}
+
+.portfolio-slider__button_active {
+    width: 16px;
+    border-radius: 10px;
+    background-color: #5454D4;
+}
+
+.portfolio-works__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 381px;
+    height: 301px;
+    border-radius: 14px;
+    background-color: #1E1E20;
+    cursor: pointer;
+}
+
+.portfolio-works__item:nth-child(2) {
+    margin-top: 58px;
+}
+
+.portfolio-works__item:nth-child(3) {
+    margin-top: 116px;
 }

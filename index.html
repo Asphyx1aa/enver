@@ -32,7 +32,7 @@
                                 <a class="nav-link" href="#services">Services</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Our Project</a>
+                                <a class="nav-link" href="#portfolio">Our Project</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">About Us</a>
@@ -79,39 +79,126 @@
             <div class="services__inner">
                 <h2 class="services__title">The Service We Provide For You</h2>
                 <ul class="services-list">
+
                     <li class="services-list__item">
-                        <div class="services-list__icon services-list__icon_blue"></div>
+                        <div class="services-list__icon services-list__icon_blue">
+                            <svg class="services-list__icon">
+                                <use xlink:href="assets/sprite/sprite.svg#code"></use>
+                            </svg>
+                        </div>
                         <h3 class="services-list__title">Development</h3>
                         <p class="services-list__subtitle">Create a platform with the best and coolest quality from us.</p>
                     </li>
+
                     <li class="services-list__item">
-                        <div class="services-list__icon services-list__icon_red"></div>
+                        <div class="services-list__icon services-list__icon_red">
+                            <svg class="services-list__icon">
+                                <use xlink:href="assets/sprite/sprite.svg#layer"></use>
+                            </svg>
+                        </div>
                         <h3 class="services-list__title">UI/UX Designer</h3>
                         <p class="services-list__subtitle">We provide UI/UX Design services, and of course with the best quality</p>
                     </li>
+
                     <li class="services-list__item">
-                        <div class="services-list__icon services-list__icon_yellow"></div>
+                        <div class="services-list__icon services-list__icon_yellow">
+                            <svg class="services-list__icon">
+                                <use xlink:href="assets/sprite/sprite.svg#code-yellow"></use>
+                            </svg>
+                        </div>
                         <h3 class="services-list__title">Graphik Designer</h3>
                         <p class="services-list__subtitle">We provide Graphic Design services, with the best designers</p>
                     </li>
+
                     <li class="services-list__item">
-                        <div class="services-list__icon services-list__icon_yellow"></div>
+                        <div class="services-list__icon services-list__icon_yellow">
+                            <svg class="services-list__icon">
+                                <use xlink:href="assets/sprite/sprite.svg#align-vertically"></use>
+                            </svg>
+                        </div>
                         <h3 class="services-list__title">Motion Graphik</h3>
                         <p class="services-list__subtitle">Create a platform with the best and coolest quality from us.</p>
                     </li>
+
                     <li class="services-list__item">
-                        <div class="services-list__icon services-list__icon_blue"></div>
+                        <div class="services-list__icon services-list__icon_blue">
+                            <svg class="services-list__icon">
+                                <use xlink:href="assets/sprite/sprite.svg#camera"></use>
+                            </svg>
+                        </div>
                         <h3 class="services-list__title">Photography</h3>
                         <p class="services-list__subtitle">We provide Photography services, and of course with the best quality</p>
                     </li>
+
                     <li class="services-list__item">
-                        <div class="services-list__icon services-list__icon_red"></div>
+                        <div class="services-list__icon services-list__icon_red">
+                            <svg class="services-list__icon">
+                                <use xlink:href="assets/sprite/sprite.svg#video-play"></use>
+                            </svg>
+                        </div>
                         <h3 class="services-list__title">Videography</h3>
                         <p class="services-list__subtitle">Create a platform with the best and coolest quality from us.</p>
                     </li>
+
                 </ul>
             </div>
         </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="portfolio__inner">
+                <h2>Our Awesome Portfolio</h2>
+
+                <div class="portfolio-slider">
+                    <ul class="portfolio-works portfolio-works_active">
+                    <li class="portfolio-works__item">
+                        <img class="portfolio-works__image" src="assets/images/portfolio-1.png" alt="">
+                    </li>
+
+                    <li class="portfolio-works__item">
+                        <img class="portfolio-works__image" src="assets/images/portfolio-1.png" alt="">
+                    </li>
+
+                    <li class="portfolio-works__item">
+                        <img class="portfolio-works__image" src="assets/images/portfolio-1.png" alt="">
+                    </li>
+                </ul>
+                    <ul class="portfolio-works">
+                        <li class="portfolio-works__item">
+                            <img class="portfolio-works__image" src="assets/images/portfolio-1.png" alt="">
+                        </li>
+
+                        <li class="portfolio-works__item">
+                            <img class="portfolio-works__image" src="assets/images/portfolio-1.png" alt="">
+                        </li>
+
+                        <li class="portfolio-works__item">
+                            <img class="portfolio-works__image" src="assets/images/portfolio-1.png" alt="">
+                        </li>
+                    </ul>
+                    <ul class="portfolio-works">
+                        <li class="portfolio-works__item">
+                            <img class="portfolio-works__image" src="assets/images/portfolio-1.png" alt="">
+                        </li>
+
+                        <li class="portfolio-works__item">
+                            <img class="portfolio-works__image" src="assets/images/portfolio-1.png" alt="">
+                        </li>
+
+                        <li class="portfolio-works__item">
+                            <img class="portfolio-works__image" src="assets/images/portfolio-1.png" alt="">
+                        </li>
+                    </ul>
+                    <div class="portfolio-slider__buttons" id="slider-buttons">
+                        <button class="portfolio-slider__button portfolio-slider__button_active" id="first-slide"></button>
+                        <button class="portfolio-slider__button" id="second-slide"></button>
+                        <button class="portfolio-slider__button" id="third-slide"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </section>
 
     <script src="js/app.js"></script>

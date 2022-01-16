@@ -1,5 +1,6 @@
 const menuButton = document.querySelector('#menu-toggle');
-const nav = document.querySelector('#nav')
+const nav = document.querySelector('#nav');
+
 
 menuButton.addEventListener('click', () => {
     if (nav.classList.contains('fade-in')) {
@@ -10,3 +11,6 @@ menuButton.addEventListener('click', () => {
         nav.classList.add('fade-in');
     }
 });
+
+const sliderButtons = document.querySelector('#slider-buttons');
+const slides = document.querySelectorAll('.portfolio-works');
