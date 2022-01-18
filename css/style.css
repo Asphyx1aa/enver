@@ -79,7 +79,7 @@ img {
 }
 
 .header.sticky {
-    background-color: rgba(84, 84, 212, .9);
+    background-color: rgba(84, 84, 212, .98);
 }
 
 .header.sticky .header__container {
@@ -88,6 +88,10 @@ img {
 
 .header.sticky .nav {
     color: #fff;
+}
+
+.header.sticky .nav-link:hover, .nav-link:active {
+    color: #000;
 }
 
 .header__container {
@@ -179,10 +183,10 @@ img {
         position: fixed;
         z-index: 99;
         height: 100vh;
-        width: 90%;
+        width: 25%;
         top: 0;
         right: 100%;
-        background-color: orange;
+        background-color: #000201;
         color: black;
     }
 
@@ -190,6 +194,17 @@ img {
         height: 100%;
         flex-direction: column;
         justify-content: center;
+    }
+
+    .nav-item:first-child {
+        border-top: 1px solid grey;
+    }
+
+    .nav-item {
+        padding: 10px 0;
+        width: 80%;
+        text-align: center;
+        border-bottom: 1px solid grey;
     }
 }
 
