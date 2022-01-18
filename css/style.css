@@ -496,6 +496,8 @@ img {
 }
 
 .portfolio {
+    padding-top: 190px;
+    padding-bottom: 140px;
     background-image:
             url("../assets/icons/circles.svg"),
             url("../assets/icons/line.svg");
@@ -508,10 +510,6 @@ img {
     font-weight: 800;
 }
 
-.portfolio__container {
-    padding-top: 190px;
-    padding-bottom: 140px;
-}
 
 .portfolio-works {
     display: none;
