@@ -70,7 +70,24 @@ img {
 /* Header */
 
 .header {
-    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: .6s;
+}
+
+.header.sticky {
+    background-color: rgba(84, 84, 212, .9);
+}
+
+.header.sticky .header__container {
+    padding: 15px 0;
+}
+
+.header.sticky .nav {
+    color: #fff;
 }
 
 .header__container {
@@ -181,7 +198,7 @@ img {
 /* Hero Section */
 
 .hero {
-    padding-top: 5vh;
+    padding-top: 15vh;
 }
 
 .hero__container {

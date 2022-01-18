@@ -1,5 +1,12 @@
 const menuButton = document.querySelector('#menu-toggle');
 const nav = document.querySelector('#nav');
+const header = document.querySelector('#header');
+
+
+
+window.addEventListener('scroll', () => {
+    header.classList.toggle('sticky', window.scrollY > 0);
+})
 
 
 menuButton.addEventListener('click', () => {
@@ -12,5 +19,3 @@ menuButton.addEventListener('click', () => {
     }
 });
 
-const sliderButtons = document.querySelector('#slider-buttons');
-const slides = document.querySelectorAll('.portfolio-works');
