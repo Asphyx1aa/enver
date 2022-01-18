@@ -456,6 +456,7 @@ img {
 
 .portfolio {
     padding-top: 101px;
+    padding-bottom: 140px;
 }
 
 .portfolio-works {
@@ -515,3 +516,50 @@ img {
 .portfolio-works__item:nth-child(3) {
     margin-top: 116px;
 }
+
+/* Contact Us */
+
+.contact-us {
+    background-color: rgba(30, 30, 32, 0.5);
+}
+
+.contact-us__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 187px 0;
+}
+
+.contact-us__title {
+    font-family: 'Graphik', sans-serif;
+    font-weight: 700;
+    flex-basis: 826px;
+    font-size: 60px;
+    line-height: 1.1;
+    text-align: left;
+}
+
+/* Footer */
+
+.footer__container {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-info {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer__copyright {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: right;
+}
+
+
