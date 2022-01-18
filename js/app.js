@@ -18,4 +18,3 @@ menuButton.addEventListener('click', () => {
         nav.classList.add('fade-in');
     }
 });
-

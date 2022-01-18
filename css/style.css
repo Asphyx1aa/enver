@@ -401,7 +401,7 @@ img {
     padding-top: 150px;
     background-image: url("../assets/icons/cross.svg");
     background-repeat: no-repeat;
-    background-position: left bottom;
+    background-position: left 15% bottom;
 }
 
 .services__background {
@@ -587,7 +587,6 @@ img {
             url("../assets/icons/cross-vert.svg");
     background-repeat: no-repeat;
     background-position: left bottom 10%, top 20% right;
-    t
 }
 
 .contact-us__title {

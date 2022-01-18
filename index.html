@@ -6,6 +6,7 @@
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
@@ -49,8 +50,8 @@
             <div class="container">
                 <div class="hero__container">
                     <div class="hero-info">
-                        <h1 class="hero-title">Build Your Awesome Platform</h1>
-                        <p class="hero-text">Enver studio is a digital studio that offers several services such as UI/UX Design to developers, we will provide the best service for those of you who use our services.</p>
+                        <h1 class="hero-title" data-aos="fade-up">Build Your Awesome Platform</h1>
+                        <p class="hero-text" data-aos="fade-right">Enver studio is a digital studio that offers several services such as UI/UX Design to developers, we will provide the best service for those of you who use our services.</p>
                         <a href="#services" class="button hero-button">Our Services</a>
                     </div>
                     <div class="hero-image">
@@ -65,8 +66,8 @@
                 <div class="container">
                     <div class="why-us__container">
                         <div class="why-us__info">
-                            <h2 class="why-us__title">Why Enver Is The Best Choice?</h2>
-                            <p class="why-us__text">Watch this one minute video so you understand why you should use our services!</p>
+                            <h2 class="why-us__title" data-aos="fade-down">Why Enver Is The Best Choice?</h2>
+                            <p class="why-us__text" data-aos="fade-up">Watch this one minute video so you understand why you should use our services!</p>
                         </div>
                         <div class="why-us__video video">
                             <button class="why-us video__button"></button>
@@ -80,11 +81,11 @@
                     <div class="container">
                         <div class="services__inner">
                             <div class="services__background">
-                                <h2 class="services__title">The Service We Provide For You</h2>
+                                <h2 class="services__title" data-aos="fade-up">The Service We Provide For You</h2>
                             </div>
                             <ul class="services-list">
 
-                                <li class="services-list__item">
+                                <li class="services-list__item" data-aos="fade-right">
                                     <div class="services-list__icon services-list__icon_blue">
                                         <svg class="services-list__icon">
                                             <use xlink:href="assets/sprite/sprite.svg#code"></use>
@@ -94,7 +95,7 @@
                                     <p class="services-list__subtitle">Create a platform with the best and coolest quality from us.</p>
                                 </li>
 
-                                <li class="services-list__item">
+                                <li class="services-list__item" data-aos="fade-right">
                                     <div class="services-list__icon services-list__icon_red">
                                         <svg class="services-list__icon">
                                             <use xlink:href="assets/sprite/sprite.svg#layer"></use>
@@ -104,7 +105,7 @@
                                     <p class="services-list__subtitle">We provide UI/UX Design services, and of course with the best quality</p>
                                 </li>
 
-                                <li class="services-list__item">
+                                <li class="services-list__item" data-aos="fade-right">
                                     <div class="services-list__icon services-list__icon_yellow">
                                         <svg class="services-list__icon">
                                             <use xlink:href="assets/sprite/sprite.svg#code-yellow"></use>
@@ -114,7 +115,7 @@
                                     <p class="services-list__subtitle">We provide Graphic Design services, with the best designers</p>
                                 </li>
 
-                                <li class="services-list__item">
+                                <li class="services-list__item" data-aos="fade-right">
                                     <div class="services-list__icon services-list__icon_yellow">
                                         <svg class="services-list__icon">
                                             <use xlink:href="assets/sprite/sprite.svg#align-vertically"></use>
@@ -124,7 +125,7 @@
                                     <p class="services-list__subtitle">Create a platform with the best and coolest quality from us.</p>
                                 </li>
 
-                                <li class="services-list__item">
+                                <li class="services-list__item" data-aos="fade-right">
                                     <div class="services-list__icon services-list__icon_blue">
                                         <svg class="services-list__icon">
                                             <use xlink:href="assets/sprite/sprite.svg#camera"></use>
@@ -134,7 +135,7 @@
                                     <p class="services-list__subtitle">We provide Photography services, and of course with the best quality</p>
                                 </li>
 
-                                <li class="services-list__item">
+                                <li class="services-list__item" data-aos="fade-right">
                                     <div class="services-list__icon services-list__icon_red">
                                         <svg class="services-list__icon">
                                             <use xlink:href="assets/sprite/sprite.svg#video-play"></use>
@@ -151,7 +152,7 @@
                 <section class="portfolio" id="portfolio">
                     <div class="container">
                         <div class="portfolio__container">
-                            <h2 class="portfolio__title">Our Awesome Portfolio</h2>
+                            <h2 class="portfolio__title" data-aos="fade-up">Our Awesome Portfolio</h2>
 
                             <div class="portfolio-slider">
                                 <ul class="portfolio-works portfolio-works_active">
@@ -214,7 +215,7 @@
     <section class="contact-us" id="about">
         <div class="container">
             <div class="contact-us__container">
-                <h2 class="contact-us__title">Contact us for the service you want to use</h2>
+                <h2 class="contact-us__title" data-aos="fade-right">Contact us for the service you want to use</h2>
                 <button class="button contact-us__button">Contact Us</button>
             </div>
         </div>
@@ -245,7 +246,13 @@
     </footer>
 
 
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 400,
+            duration: 1000
+        });
+    </script>
     <script src="js/app.js"></script>
 
 </body>
