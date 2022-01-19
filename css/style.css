@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
@@ -57,70 +59,6 @@ img {
     padding: 0 15px;
 }
 
-.hero-section {
-    min-height: 100vh;
-    background-image:
-            url("../assets/images/hero-blur.svg"),
-            url("../assets/images/hero-blur2.svg");
-    background-position-y: -30px;
-    background-position-x: 0, right;
-    background-repeat: no-repeat;
-}
-
-/* Header */
-
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    transition: .6s;
-}
-
-.header.sticky {
-    background-color: rgba(84, 84, 212, .98);
-}
-
-.header.sticky .header__container {
-    padding: 15px 0;
-}
-
-.header.sticky .nav {
-    color: #fff;
-}
-
-.header.sticky .nav-link:hover, .nav-link:active {
-    color: #000;
-}
-
-.header__container {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 40px 0;
-}
-
-.menu-toggle {
-    display: none;
-}
-
-.nav-list {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-}
-
-.nav-link {
-    font-size: 18px;
-    transition: color .2s ease;
-}
-
-.nav-link:hover, .nav-link:active {
-    color: #5454D4;
-}
-
 .button {
     display: inline-block;
     padding: 1em 2.75em;
@@ -135,8 +73,37 @@ img {
     transition: background-color .2s ease;
 }
 
+.button_filled {
+    padding: 1.3em 3.5em;
+    border: 0;
+    background-color: #5454D4;
+}
+
+.button_arrow {
+    background-image: url("../assets/icons/button-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: right 15% center;
+}
+
 .button:hover {
     background-color: #5454D4;
+}
+
+.section-title {
+    font-family: 'Graphik', sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.05;
+}
+
+.section-title_big {
+    font-size: 80px;
+}
+
+.section-text {
+    color: rgba(255, 255, 255, 0.7);
+    letter-spacing: -0.03em;
+    line-height: 1.85;
 }
 
 .fade-in {
@@ -163,6 +130,68 @@ img {
     to {
         right: -100%;
     }
+}
+
+.first-screen {
+    background-image:
+            url("../assets/images/hero-blur.svg"),
+            url("../assets/images/hero-blur2.svg");
+    background-position-y: -30px;
+    background-position-x: 0, right;
+    background-repeat: no-repeat;
+}
+
+/* Header */
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: all .6s;
+}
+
+.header_sticky {
+    background-color: rgba(84, 84, 212, .98);
+}
+
+.header_sticky .header__container {
+    padding: 15px 0;
+}
+
+.header_sticky .nav {
+    color: #fff;
+}
+
+.header_sticky .nav-link:hover, .nav-link:active {
+    color: #000;
+}
+
+.header__container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav-list__link {
+    font-size: 18px;
+    transition: color .2s ease;
+}
+
+.nav-list__link:hover, .nav-list__link:active {
+    color: #5454D4;
 }
 
 @media screen and (max-width: 992px) {
@@ -208,37 +237,32 @@ img {
     }
 }
 
-
-
 /* Hero Section */
 
 .hero {
-    padding-top: 15vh;
+    min-height: 100vh;
 }
 
-.hero__container {
+.hero__content {
     display: flex;
+    align-items: center;
+    padding-top: 165px;
 }
 
-.hero-info {
-    padding-top: 13vh;
-    max-width: 536px;
+.hero__info {
+    flex: 0 1 540px;
 }
 
-.hero-title {
-    font-family: 'Graphik', sans-serif;
-    margin-bottom: 24px;
-    font-size: 80px;
-    font-weight: 700;
-    line-height: 1.05;
+.hero__title {
+    margin-bottom: 25px;
 }
 
-.hero-text {
+.hero__text {
     margin-bottom: 50px;
-    line-height: 1.85;
-    color: rgba(255, 255, 255, 0.7);
-    letter-spacing: -0.03em;
-    text-align: left;
+}
+
+.hero__image {
+    flex: 1 1 auto;
 }
 
 .hero-button {
@@ -253,11 +277,6 @@ img {
     background-position: bottom 50% right 35px;
 }
 
-.hero-image {
-    flex-grow: 1;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 
 @media screen and (max-width: 992px) {
     .hero-title {
