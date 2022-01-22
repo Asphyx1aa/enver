@@ -18,7 +18,7 @@
                 </a>
 
                 <div class="menu-toggle" id="menu-toggle">
-                    <img src="assets/icons/menu-toggle.svg" alt="">
+                    <span></span>
                 </div>
 
                 <nav class="nav header__nav" id="nav">
@@ -66,7 +66,11 @@
                         <p class="section-text why-us__text">Watch this one minute video so you understand why you should use our services!</p>
                     </div>
                     <div class="video why-us__video">
-                        <button class="video__play-button"></button>
+                        <button class="button_filled video__play-button">
+                            <svg>
+                                <use xlink:href="../assets/sprite/sprite.svg#video-button"></use>
+                            </svg>
+                        </button>
                         <img class="video__image" src="assets/images/video-img.jpg" alt="">
                     </div>
                 </div>
@@ -145,7 +149,7 @@
 
                 <section class="portfolio" id="portfolio">
                     <div class="container portfolio__container">
-                        <h2 class="portfolio__title">Our Awesome Portfolio</h2>
+                        <h2 class="section-title portfolio__title">Our Awesome Portfolio</h2>
 
                         <div class="portfolio-slider">
                             <ul class="portfolio-works portfolio-works_active">
